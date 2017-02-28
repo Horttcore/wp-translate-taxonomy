@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Custom Taxonomy Translation</title>
+		<link rel="stylesheet" href="assets/style.css" media="screen" charset="utf-8">
+	</head>
+	<body>
+		<main>
+
+			<h1>Custom Taxonomy Übersetzungen</h1>
+
+			<form method="post">
+				<fieldset class="taxonomy">
+					<legend>Taxonomy</legend>
+					<p>
+						<label>Singular<br>
+							<input id="custom-taxonomy-name-singular" type="text" placeholder="Taxonomy">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>Plural<br>
+							<input id="custom-taxonomy-name-plural" type="text" placeholder="Taxonomies">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<!--<p>
+						<label>Hierarchisch<br>
+							<input type="checkbox" id="hierarchical"> Ja
+						</label>
+					</p>-->
+				</fieldset>
+				<fieldset class="translations">
+					<legend>Übersetzungen</legend>
+					<p>
+						<label>Search <span class="taxonomy-name taxonomy-name-plural taxonomy-name-uppercase">Taxonomies</span><br>
+							<input readonly type="text" name="name" value="" placeholder="Taxonomien suchen" data-translation="%%Taxonomies%% suchen">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>Popular <span class="taxonomy-name taxonomy-name-plural taxonomy-name-uppercase">Taxonomies</span><br>
+							<input readonly type="text" name="name" placeholder="Beliebte Schlagwörter" data-translation="Beliebte %%Taxonomies%%">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>All <span class="taxonomy-name taxonomy-name-plural taxonomy-name-uppercase">Taxonomies</span><br>
+							<input readonly type="text" name="name" placeholder="Alle Taxonomien" data-translation="Alle %%Taxonomies%%">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>Parent <span class="taxonomy-name taxonomy-name-singular taxonomy-name-uppercase">Taxonomy</span><br>
+							<input readonly type="text" name="name" value="" placeholder="Übergeordnete Taxonomie" data-translation="Übergeordnete %%Taxonomy%%">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>Parent <span class="taxonomy-name taxonomy-name-singular taxonomy-name-uppercase">Taxonomy:</span><br>
+							<input readonly type="text" name="name" value="" placeholder="Übergeordnete Taxonomie:" data-translation="Übergeordnete %%Taxonomy%%:">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>Edit <span class="taxonomy-name taxonomy-name-singular taxonomy-name-uppercase">Taxonomy</span><br>
+							<input readonly type="text" name="name" value="" placeholder="Taxonomie bearbeiten" data-translation="%%Taxonomy%% bearbeiten">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>View <span class="taxonomy-name taxonomy-name-singular taxonomy-name-uppercase">Taxonomy</span><br>
+							<input readonly type="text" name="name" value="" placeholder="Taxonomie ansehen" data-translation="%%Taxonomy%% ansehen.">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>Update <span class="taxonomy-name taxonomy-name-singular taxonomy-name-uppercase">Taxonomy</span><br>
+							<input readonly type="text" name="name" value="" placeholder="Taxonomie aktualisieren." data-translation="%%Taxonomy%% aktualisieren.">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>Add New <span class="taxonomy-name taxonomy-name-singular taxonomy-name-uppercase">Taxonomy</span><br>
+							<input readonly type="text" name="name" value="" placeholder="Neue Taxonomie erstellen" data-translation="Neue %%Taxonomy%% erstellen">
+						</label><span class="alert">&asymp;</span><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>New <span class="taxonomy-name taxonomy-name-singular taxonomy-name-uppercase">Taxonomy</span> Name<br>
+							<input readonly type="text" name="name" placeholder="Neuer Taxonomiename" data-translation="%%Taxonomy%%name">
+						</label><span class="alert">&asymp;</span><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>Separate <span class="taxonomy-name taxonomy-name-plural taxonomy-name-lowercase">taxonomies</span> with commas.<br>
+							<input readonly type="text" name="name" value="" placeholder="Taxonomien durch Kommas trennen." data-translation="%%Taxonomies%% durch Kommas trennen.">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>Add or remove <span class="taxonomy-name taxonomy-name-plural taxonomy-name-lowercase">taxonomies</span><br>
+							<input readonly type="text" name="name" value="" placeholder="Taxonomien hinzufügen oder entfernen" data-translation="%%Taxonomies%% hinzufügen oder entfernen">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>Choose from the most used <span class="taxonomy-name taxonomy-name-plural taxonomy-name-lowercase">taxonomies</span><br>
+							<input readonly type="text" name="name" value="" placeholder="Wähle aus den meistgenutzten Taxonomien" data-translation="Wähle aus den meistgenutzten %%Taxonomies%%">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>No <span class="taxonomy-name taxonomy-name-plural taxonomy-name-lowercase">taxonomies</span> found.<br>
+							<input readonly type="text" name="name" value="" placeholder="Keine Taxonomien gefunden." data-translation="Keine %%Taxonomies%% gefunden.">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label>No <span class="taxonomy-name taxonomy-name-plural taxonomy-name-lowercase">taxonomies</span><br>
+							<input readonly type="text" name="name" value="" placeholder="Keine Taxonomien" data-translation="Keine %%Taxonomies%%">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label><span class="taxonomy-name taxonomy-name-plural taxonomy-name-uppercase">Taxonomies</span> list navigation<br>
+							<input readonly type="text" name="name" placeholder="Navigation der Taxonomienliste" data-translation="Navigation der %%Taxonomies%%liste">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+					<p>
+						<label><span class="taxonomy-name taxonomy-name-plural taxonomy-name-uppercase">Taxonomies</span> list<br>
+							<input readonly type="text" name="name" value="" placeholder="Taxonomienliste" data-translation="%%Taxonomies%%liste">
+						</label><a href="" class="copy-to-clipboard">&#x2398;</a>
+					</p>
+				</fieldset>
+			</form>
+		</main>
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+		<script src="assets/script.js"></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-27761110-8', 'auto');
+			ga('set', 'anonymizeIp', true);
+			ga('send', 'pageview');
+		</script>
+	</body>
+</html>
